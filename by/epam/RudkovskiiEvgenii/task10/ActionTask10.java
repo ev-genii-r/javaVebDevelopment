@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class ActionTask10 {
     public ArrayList tanFunction(int firstBorder, int secondBorder, int step){
+        if(firstBorder>=secondBorder){
+            return null;
+        }
+        if(step<=0){
+            return null;
+        }
         int x=firstBorder;
         ArrayList<EntityTask10> matrix=new ArrayList<EntityTask10>();
         EntityTask10 entityTask10=new EntityTask10();

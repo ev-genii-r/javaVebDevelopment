@@ -3,6 +3,9 @@ package task2;
 public class ActionTask2 {
 
     public int daysInMonth(int year,int month){
+        if(month<0){
+            month*=-1;
+        }
         switch (month){
             case 1: return 31;
             case 2: if(checkLeapYear(year)){

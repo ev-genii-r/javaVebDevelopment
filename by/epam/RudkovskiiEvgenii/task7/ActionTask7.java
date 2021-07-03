@@ -2,6 +2,9 @@ package task7;
 
 public class ActionTask7 {
     public EntityTask7 distanceOfDots(EntityTask7 dot1, EntityTask7 dot2){
+        if(dot1== null || dot2== null){
+            return null;
+        }
         int x1=dot1.getX(), x2=dot2.getX();
         int y1=dot1.getY(), y2=dot2.getY();
         double distance1 = Math.sqrt(x1*x1+y1*y1);

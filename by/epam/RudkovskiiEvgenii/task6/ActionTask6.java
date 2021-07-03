@@ -4,6 +4,9 @@ public class ActionTask6 {
 
     public int[] convertSecond(int inputSecond){
 
+        if(inputSecond<0){
+            inputSecond*=-1;
+        }
         int seconds=0;
         int minuts=0;
         int hours=0;

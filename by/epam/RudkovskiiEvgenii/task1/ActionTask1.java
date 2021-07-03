@@ -7,7 +7,7 @@ public class ActionTask1 {
         return (lustNumber*lustNumber)%10;
     }
 
-    public int getLustNumber(int number){
+    private int getLustNumber(int number){
         return number%10;
     }
 }
